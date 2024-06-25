@@ -2,3 +2,4 @@ content/
 openai.secret.json
 gov_env/
 :gov_opportunity.db 
+table_index_dir/
