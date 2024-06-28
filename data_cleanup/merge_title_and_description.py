@@ -23,7 +23,18 @@ def merge_csv_to_json(desc_csv, no_desc_csv, output_json):
                     'Department/Ind.Agency': row['Department/Ind.Agency'],
                     'NaicsCode': row['NaicsCode'],
                     'ProductServiceCode': row['ProductServiceCode'],
-                    'Description': desc_dict[project_id]
+                    'Description': desc_dict[project_id],
+                    'PlaceOfPerformanceCountry': row['PlaceOfPerformanceCountry'],
+                    'PlaceOfPerformanceState': row['PlaceOfPerformanceState'],
+                    'PlaceOfPerformanceCity': row['PlaceOfPerformanceCity'],
+                    'PlaceOfPerformanceStreetAddress': row['PlaceOfPerformanceStreetAddress'],
+                    'PlaceOfPerformanceZip': row['PlaceOfPerformanceZip'],
+                    'Sub-Tier': row['Sub-Tier'],
+                    'ResponseDueDate': row['ResponseDueDate'],
+                    'SetASide': row['SetASide'],
+                    'SetASideCode': row['SetASideCode'],
+                    'Type': row['Type'],
+                    'PostedDate': row['PostedDate']
                 }
                 merged_data.append(merged_row)
 
